@@ -1,0 +1,366 @@
+body{
+    background-color: #fffacd;
+    font-family: "Noto Sans", sans-serif;
+    line-height: 25px;
+}
+
+.home-bg {
+    position: relative; 
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-bg::before {    
+      content: "";
+      background-image: url('../images/bg4.webp');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+      width: 100%;
+}
+
+.home-bg h1 {
+  position: relative;
+  color: #0A4D49;  
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 0.9;
+  text-align: center;
+  animation-name: home-bg-example;
+  animation-duration: 4s;
+}
+
+@keyframes home-bg-example {
+    from {color: lemonchiffon; font-size: 5em;}
+    to {color: #0A4D49;font-size: 4em;}
+  }
+
+.container {
+    margin: 2% auto 2%;
+    padding: 0 32px;
+}
+
+h1{
+	font-size: 34px; 
+	font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #0A4D49;
+    text-align: center;
+} 
+
+h2{
+    font-size: 28px; 
+	font-weight: bold; 
+    color:#0A4D49;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+h3{
+    font-size: 24px; 
+	font-weight: bold; 
+    color: #0A4D49;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 35px;
+}
+
+h4{
+    font-size: 20px; 
+	font-weight: bold; 
+    color: #0A4D49;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+a.skip{
+    background: white;
+    padding: 3px;
+    -webkit-transition: top 1s ease-out;
+    transition: left 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    left: -500px;
+  }
+
+a.skip:focus {
+    top:0px;
+    left: 0px;
+}
+
+/* top nav bar */
+.topnav {
+    background: transparent;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  
+  .topnav a {
+    color: #0A4D49;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    opacity: 0.6;
+  }
+  
+  .topnav a:hover {
+    opacity: 1;
+    font-weight: bold;
+    border: 3px dashed #0A4D49;
+  }
+  
+  .topnav a.active {
+    opacity: 1;
+    /* box-shadow: #0A4D49 0px 3px 0px 0px; */
+    border: 3px solid #0A4D49;
+    font-weight: bold;
+  }
+
+
+.about-text {
+    padding-left: 20px;
+}
+
+.about-text a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.about-text a:hover {
+    /* background-color: #0A4D49; */
+    /* color: lemonchiffon; */
+    border: 2px dashed #0A4D49;
+}
+
+.about-content {
+    display: grid;
+    grid-column: 1 / 4;
+    grid-template-columns: auto-fit, minmax(240px, 1fr);
+    align-items: start;
+}
+
+.page-des, .content-title {
+    font-size: 20px; 
+	font-weight: bold; 
+    color: #0A4D49;
+}
+
+.page-des {
+    text-align: center;
+}
+
+.photo-content {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-img, .photo-img{
+    height: 300px;
+    width: 300px;
+    border: 5px solid #0A4D49;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: saturate(150%);
+}
+
+.potrait-pics {
+    width: 300px;
+    height: auto;
+    
+}
+
+.photo-img:hover{
+    box-shadow: 10px #ccc;
+    transform: scale(1.125);
+    transition: 0.5s;
+}
+
+
+* {box-sizing: border-box;}
+
+.form-class {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 10px;
+    margin-right: 15%;
+}
+
+label {
+    text-align: left;
+}
+
+input[type=text], textarea {
+  width: 250px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  box-shadow: inset 0px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+input[type=submit] {
+  background-color: #0A4D49;
+  color: lemonchiffon;
+  width: 100px;
+  padding: 12px 20px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px rgb(0 0 0 / 30%);
+}
+
+input[type=submit]:hover {
+  background-color: lemonchiffon;
+  color: #0A4A00;
+  font-weight: bold;
+  border: #0A4A00 2px solid;
+  display: block;
+}
+
+
+footer{
+    background-color: #0A4D49;
+    color: lemonchiffon;
+    min-height: 90px;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    
+}
+
+footer div {
+    text-align: center;
+    padding: 0.5em;
+}
+
+footer a{
+    text-decoration: underline;
+    color: lemonchiffon;
+}
+
+footer a:hover {
+    background-color: #0A4D49;
+    /* color: #0A4D49; */
+    border: 1px dashed lemonchiffon;
+}
+
+/* Media query for tablet display */
+@media screen and (min-width: 640px){
+
+    .home-bg{
+        background-size: cover;
+    }
+
+    .home-bg h1 {
+        font-size: 5em;
+    }
+
+    @keyframes home-bg-example {
+        from {color: lemonchiffon; font-size: 6em;}
+        to {color: #0A4D49;font-size: 5em;}
+      }
+
+    .topnav {
+        justify-content: flex-start;
+    }
+
+    input[type=text], textarea {
+        width: 50%;
+    }
+
+    .photo-content {
+        margin: 24px;
+        /* margin-bottom: 24px; */
+        /* display: flex; */
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .photo-des {
+        margin-left: 40px;
+    }
+
+    .about-img, .photo-img {
+        /* padding: 60px; */
+        margin: 0px;
+    }
+    
+}
+
+/* Media query for laptop/desktop display */
+@media screen and (min-width: 1008px){
+
+    input[type=text], textarea {
+        width: 50%;
+    }
+
+    .home-bg{
+        background-size: cover;
+    }
+
+    .home-bg h1 {
+        font-size: 6em;
+    }
+
+    @keyframes home-bg-example {
+        from {color: lemonchiffon; font-size: 7em;}
+        to {color: #0A4D49;font-size: 6em;}
+      }
+
+    .topnav {
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  
+    /*Turn off transition*/
+    a.skip {
+      -webkit-transition: initial; /* sets to default setting */
+      transition: initial; /* sets to default setting */
+    }
+  
+    /*Turn off transition*/
+    .home-bg h1{
+      animation-name: none;
+    }
+  }
