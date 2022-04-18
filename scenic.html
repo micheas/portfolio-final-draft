@@ -37,21 +37,33 @@
 		  </div>	
 	</header>
 
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top <i class="fa-solid fa-arrow-up"></i></button>
+
 	<div class="container">
 
 	<main id="main">
 		<h1>Scenic views</h1>
 		<p class="page-des">These are some of the scenic view photos I took over the years from various places I travelled.</p>
 	<!-- <p>In 2016 I loaded my kids into the minivan and took them on a drive across the Northern midwest states.  We went to Wisconsin Dells, the Badlands, Mount Rushmore, Jewel Cave, and Custer State Park.</p> -->
-		<div>
-		
-		<h2>Ann Arbor Arbetorium</h2>
+	
+	<h2>Filter Images based on categories</h2>
+	<div id="myBtnContainer">
+  		<button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+  		<button class="btn" onclick="filterSelection('city')"> CITY SCAPES</button>
+		<button class="btn" onclick="filterSelection('water')"> WATER SCAPES</button>
+		<button class="btn" onclick="filterSelection('park')"> PARKS</button>
+  		<!-- <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+	</div>
+
+	<div>
+<div class="filterDiv parks">
+		<h3>Ann Arbor Arbetorium</h3>
 		<div class = "photo-content">
-		
-			<div>
+			<div class="flip">
 				<a class="example-image-link" href="images/arbetorum.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 					<img class="photo-img" src = "images/arbetorum.jpg" width="200" alt="sun rise view from the arbetorum. It is a sky view from a garden, with a river and trees along the river.">
 				</a>
+				<!-- <div class="flip-back">Click on the image to view images gallery</div>> -->
 			</div>
 			<div class="photo-des">
 				<p class="content-title">Description</p>
@@ -65,8 +77,10 @@
 				<p>Sept 26, 2021</p>
 			</div>
 		</div>
+	</div>
 
-		<h2>Early winter late fall at Ann Arbor</h2>
+	<div class="filterDiv parks">
+		<h3>Early winter late fall at Ann Arbor</h3>
 		<div class = "photo-content">
 			<div>
 				<a class="example-image-link" 
@@ -87,8 +101,10 @@
 				<p>Nov 14, 2021</p>
 			</div>
 		</div>
+	</div>
 
-		<h2>Empire State Building at New York City</h2>
+	<div class="filterDiv city">
+		<h3>Empire State Building at New York City</h3>
 		<div class = "photo-content">	
 			<div>
 				<a class="example-image-link" 
@@ -110,8 +126,10 @@
 				<p>Jan 4, 2022</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>The Tunnel at New York City</h2>
+		<div class="filterDiv city">
+		<h3>The Tunnel at New York City</h3>
 		<div class = "photo-content">
 			<div>
 				<a class="example-image-link" 
@@ -133,8 +151,10 @@
 				<p>Dec 31, 2021</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>Steam Chimney in Black & White</h2>
+		<div class="filterDiv city">
+		<h3>Steam Chimney in Black & White</h3>
 		<div class = "photo-content">
 			
 			<div>
@@ -158,8 +178,10 @@
 				<p>Dec 18, 2021</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>Taxis at New York City</h2>
+		<div class="filterDiv city">
+		<h3>Taxis at New York City</h3>
 		<div class = "photo-content">
 			
 			<div>
@@ -181,8 +203,10 @@
 				<p>Dec 30, 2021</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>New York City Skyline</h2>
+		<div class="filterDiv water">
+		<h3>New York City Skyline</h3>
 		<div class = "photo-content">
 			
 			<div>
@@ -205,8 +229,10 @@
 				<p>Jan 4, 2022</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>New Jersey Skyline</h2>
+		<div class="filterDiv water">
+		<h3>New Jersey Skyline</h3>
 		<div class = "photo-content">
 			
 			<div>
@@ -229,8 +255,10 @@
 				<p>Jan 4, 2022</p>
 			</div>
 		</div>
+		</div>
 
-		<h2>Boat ride at Greece</h2>
+		<div class="filterDiv water">
+		<h3>Boat ride at Greece</h3>
 		<div class = "photo-content">
 			
 			<div>
@@ -254,6 +282,7 @@
 				<p>Oct 24, 2019</p>
 			</div>
 		</div>
+		</div>
 	</div>
 	</main>
 
@@ -268,6 +297,7 @@
 	
 </body>
 <script src="dist/js/lightbox-plus-jquery.js"></script>
+<script src="js/script.js"></script>
 
 </html>
 

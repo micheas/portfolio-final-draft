@@ -39,6 +39,8 @@
 		  </div>
 	</header>
 	
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top <i class="fa-solid fa-arrow-up"></i></button>
+
 	<div class="container">
 	
 	
@@ -46,9 +48,20 @@
 		<h1>Random Page</h1>
 		<p class="page-des">Here are some of the random photos of inspiration and some food photography.</p>
 		<!-- <p>In 2016 I loaded my kids into the minivan and took them on a drive across the Northern midwest states.  We went to Wisconsin Dells, the Badlands, Mount Rushmore, Jewel Cave, and Custer State Park.</p> -->
+		
+		<h2>Filter Images based on categories</h2>
+		<div id="myBtnContainer">
+			  <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
+			  <button class="btn" onclick="filterSelection('art')"> ART</button>
+			  <button class="btn" onclick="filterSelection('food')"> FOOD</button>
+			  <!-- <button class="btn" onclick="filterSelection('city')"> CITY SCAPES</button> -->
+			  <!-- <button class="btn" onclick="filterSelection('colors')"> Colors</button> -->
+		</div>
+		
 		<div>
+			<div class="filterDiv food">
+			<h3>My First Pizza at Ann Arbor</h3>
 			<div class = "photo-content">	
-				<h2>My First Pizza at Ann Arbor</h2>
 				<div>
 					<a class="example-image-link" 
 					href="images/pizza.jpg" 
@@ -71,8 +84,11 @@
 					<p>Sept 10, 2021</p>
 				</div>
 			</div>
-			<div class = "photo-content">
-				<h2>Sunflower Contrast</h2>
+			</div>
+
+			<div class="filterDiv art">
+			<h3>Sunflower Contrast</h3>
+			<div class = "photo-content">	
 				<div>
 					<a class="example-image-link" href="images/flower.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/flower.jpg" width="200" alt="the photo of two sunflower and a lot of leaves ad huge trees around it.">
@@ -89,8 +105,11 @@
 					<p>Sept 26, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv art">
+			<h3>Fall leaves Colors</h3>
 			<div class = "photo-content">
-				<h2>Fall leaves Colors</h2>
 				<div>
 					<a class="example-image-link" href="images/thefall.JPG" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class="photo-img" src="images/thefall.JPG" width="200" alt="the photo of 2 red leaves and few green leaves.">
@@ -107,8 +126,11 @@
 					<p>Oct 24, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv art">
+			<h3>Inspiring Graffiti Art</h3>
 			<div class = "photo-content">
-				<h2>Inspiring Graffiti Art</h2>
 				<div>
 					<a class="example-image-link" href="images/grafitti.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/grafitti.jpg" width="200" alt="the photo of a graffiti covering the whole wall of a 4 storey building.">
@@ -124,8 +146,11 @@
 					<p>Dec 15, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv food">
+			<h3>Coffee and croissant</h3>
 			<div class = "photo-content">
-				<h2>Coffee and croissant</h2>
 				<div>
 					<a class="example-image-link" href="images/coffee.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/coffee.jpg" width="200" alt="the photo of 3 coffee filled cups and croissant placed on top of a table top.">
@@ -143,8 +168,11 @@
 					<p>DEc 15, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv food">
+			<h3>Pancakes for breakfast</h3>
 			<div class = "photo-content">
-				<h2>Pancakes for breakfast</h2>
 				<div>
 					<a class="example-image-link" href="images/pancakes.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/pancakes.jpg" width="200" alt="the photo of a half coffee cup and 3 pancakes covered with melted chocoloate chips">
@@ -162,8 +190,11 @@
 					<p>Dec 16, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv food">
+			<h3>Angelo's Fish Sandwich</h3>
 			<div class = "photo-content">
-				<h2>Angelo's Fish Sandwich</h2>
 				<div>
 					<a class="example-image-link" href="images/sandwich.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/sandwich.jpg" width="200" alt="the photo of a fish sandwich with mayonaise on the side and fries.">
@@ -181,8 +212,11 @@
 					<p>Dec 18, 2021</p>
 				</div>
 			</div>
+			</div>
+
+			<div class="filterDiv food">
+			<h3>Indian Street food: Pani Puri</h3>
 			<div class = "photo-content">
-				<h2>Indian Street food: Pani Puri</h2>
 				<div>
 					<a class="example-image-link" href="images/panipuri.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class="photo-img" src = "images/panipuri.jpg" width="200" alt="the photo of a indian street food called pani puri.">
@@ -198,8 +232,11 @@
 					<p>Sept 26, 2019</p>
 				</div>
 			</div>
-			<div class = "photo-content">
-				<h2>Star from The Gaurdians of the galaxy movie</h2>
+			</div>
+
+			<div class="filterDiv food">
+			<h3>Star from The Gaurdians of the galaxy movie</h3>
+			<div class = "photo-content">	
 				<div>
 					<a class="example-image-link" href="images/galaxy.jpg" data-lightbox="example-set" data-title="Click the right half of the image to move forward.">
 						<img class ="photo-img potrait-pics" src = "images/galaxy.jpg" width="200" alt="the photo of a racoon eating peanut butter directly from the jar.">
@@ -214,6 +251,7 @@
 					<p class="content-title">Date</p>
 					<p>Dec 18, 2021</p>
 				</div>
+			</div>
 			</div>
 		</div>
 	</main>
@@ -231,5 +269,6 @@
 
 </body>
 <script src="dist/js/lightbox-plus-jquery.js"></script>
+<script src="js/script.js"></script>
 
 </html>
